@@ -14,7 +14,7 @@ h1{
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 2em; 
 	font-weight: bold;
-	color:#88f;
+	color:#6262f1;
 }
 
 h2{
@@ -61,14 +61,14 @@ nav{
 	text-align: right;   
   }
 #personal{
-	color:white;
-	background:#ee660b;
+	color:#131212;
+	background:rgb(247, 239, 2);
 	font-size: 1em;
 }
-a:visited{color:#f28e1d}
+a:visited{color:rgb(249, 235, 47)}
 
 footer{
-	background-color:hsl(40, 3%, 55%);
+	background-color:hsl(30, 3%, 31%);
 	color: white;
 	padding-top: 1px;
 	text-align: center;

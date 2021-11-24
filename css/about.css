@@ -4,6 +4,7 @@ html{
 body{
 	margin:0;
 	padding: 10px;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
 	background-color:#fff1ec;
 }
@@ -42,6 +43,7 @@ nav li{
 }
 h2{
 	font-size: 2em; 
+	font-family: fantasy;
 	font-weight: bold;
 }
 
