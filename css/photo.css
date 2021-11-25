@@ -87,3 +87,24 @@ footer{
 	padding-top: 1px;
 	text-align: center;
   }
+@media screen and (min-width: 600px){
+	img{
+		height: 400px;
+		width:auto;
+		border: 1px solid #e98f19;
+		padding: 15px;
+		margin: 10px;
+		border-radius: 30px;
+	}
+}
+
+@media screen and (min-width: 900px){
+	img{
+		height: 500px;
+		width:auto;
+		border: 3px solid pink;
+		padding: 15px;
+		margin: 10px;
+		border-radius: 70px;
+	}
+}
