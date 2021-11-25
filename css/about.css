@@ -87,3 +87,14 @@ footer{
 	padding-top: 1px;
 	text-align: center;
   }
+@media screen and (min-width: 600px){
+    p{
+		font-family:'Courier New', Courier, monospace;
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (min-width: 900px){
+	p { font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: 1.5em;}
+}
