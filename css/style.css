@@ -205,12 +205,16 @@ footer{
 	padding-top: 1px;
 	text-align: center;
   }
-/* @media screen and (min-width: 850px){
-    body>header{
-	  display: flex;
-	  flex-direction: row;
-	  justify-content: space-between;
-	  position:sticky;
-	  top:0;
-	  left:0;
-	  width:100%;} */
+@media screen and (min-width: 600px){
+    .container{
+		grid-template-rows:auto;
+		grid-row-gap: 20px;
+	}
+}
+
+@media screen and (min-width: 900px){
+	.container{
+		grid-template-rows:auto;
+		grid-row-gap: 25px;
+	}
+}
