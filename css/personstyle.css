@@ -73,3 +73,29 @@ footer{
 	padding-top: 1px;
 	text-align: center;
   }
+@media screen and (min-width: 600px){
+    body{
+		margin:0;
+		padding: 10px;
+		font-size: 20px;
+		background:transparent;
+		background-size: cover;
+	}
+	a:visited{color:black;}
+}
+
+@media screen and (min-width: 900px){
+	body{
+		margin:0;
+		padding: 10px;
+		font-size: 25px;
+		background:transparent;
+		background-size: cover;
+	}
+	nav{
+		background-color:#ffd364;
+		padding: 10px 0;    
+		text-align: right;   
+	  }
+	a:visited{color:#0c55c2;}
+}
