@@ -5,9 +5,7 @@ body{
 	margin:0;
 	padding: 10px;
     font-size: 18px;
-	background-image:url("yun.jpeg");
-	background-repeat: no-repeat;
-	background-size: cover;
+    background-color: transparent;
 }
 
 h1{
@@ -61,15 +59,15 @@ nav{
 	text-align: right;   
   }
 #personal{
-	color:#131212;
-	background:rgb(247, 239, 2);
+	color:hsl(0, 0%, 100%);
+	background:#3965df;
 	font-size: 1em;
 }
 a:visited{color:rgb(249, 235, 47)}
 
 footer{
-	background-color:hsl(30, 3%, 31%);
-	color: white;
+	background-color:hsla(188, 81%, 54%, 0.761);
+	color: black;
 	padding-top: 1px;
 	text-align: center;
   }
