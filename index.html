@@ -7,8 +7,17 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Curriculum Vitae</title>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3N0ZLWFNZ5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3N0ZLWFNZ5');
+    </script>
   </head>
-  <body>
+  <body class="hbody">
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <nav>
         <ul class="nav_links">
@@ -16,19 +25,19 @@
               <a id="home" href = "index.html">Home</a>
             </li>
             <li class="nav_item">
-              <a id="about me" href = "about.html">About Me</a>
+              <a  href = "about.html">About Me</a>
             </li>
             <li class="nav_item">
-              <a id="personal" href = "personal.html">Personal</a>
+              <a  href = "personal.html">Personal</a>
             </li>
             <li class="nav_item">
-              <a id = "photos" href = "photos.html">Photos</a>
+              <a  href = "photos.html">Photos</a>
             </li>
 
         </ul> 
      </nav>
 
-    <main class="container">
+    <main id="main" class="container">
         <h1>Welcome!!!</h1>
         <header class="p__head">
           <div class="p_illus" style="
@@ -37,18 +46,23 @@
           align-items: center;
           width:100%;">
             <img src="imgs/hole-vert.svg" alt class="p_hole">
-            <div class="p-umbrella">
-              <img src="imgs/umbrella.svg" alt="" class="p__umbrella__illus" width="251" height="313" style="transform: translate3d(-49.193px, 16.4617px, 0px) rotate(0deg);">
-            </div>
     
           </div>
         </header>
-        <header id="main">
+        <header class="intro">
               <h2>Hi everyone. I‘m Xiyu Hu,welcome to my portfolio! </h2>
               <p>xhuscly@umich.edu | 3157065980 | <a href = "https://www.linkedin.com/in/xiyu-hu-451b311a0">linkedin.com/in/xiyu-hu-451b311a0</a> </p>
             </header>
-    <div class="about-image">
-      <img id="about-image" src="imgs/myself.jpg" alt="My selfies"/>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="imgs/myself.jpg" alt="My selfies"/>
+          </div>
+          <div class="flip-card-back">
+            <p>You can also call me Thea (my English name). </p>
+            <p>constellation : Aries </p>
+          </div>
+        </div>
       </div>
     <div class="about text-block">
         <a id="about"></a>

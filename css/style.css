@@ -1,18 +1,18 @@
 html{
     scroll-behavior: smooth;
 }
-body{
+.hbody{
 	margin:0;
 	padding: 10px;
     font-size: 100%;
-	background: #fff1ec;
-	color:#6565fa;
+	background-color: #fff1ec;
 }
 
-h1{
+.container h1{
 	display: block;
 	font-size: 3em; 
 	margin:0,67em;
+	color:#6565fa;
 	font-weight: bold;
 	font-family:cursive;
 	text-align: center;
@@ -42,25 +42,21 @@ h1{
 	z-index:1;
 	
 }
-.p-head .p_umbrella{
-	display: block;
-	bottom: 0;
-	width:40%;
-	left:8.5%;
-	z-index:2;
-    margin-left: auto;
-    margin-right: auto;
-} 
-.p-head .p_umbrella_illus{
-	display: block;
-	width:100%;
-	height:auto;
-    margin-left: auto;
-    margin-right: auto;
+.intro h2{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #6565fa;
+    text-align: center
 }
-
-
-h2,h3,h4{
+.about h3{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #6565fa;
+    text-align: center
+}
+.project h4{
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 1.5em; 
 	font-weight: bold;
@@ -122,7 +118,46 @@ nav li{
 	background:hsl(224, 89%, 59%);
 	font-size: 1.2em;
 }
-.about-image{
+.flip-card {
+	background-color: transparent;
+	width: 700px;
+	height: 540px;
+	padding:10px;
+	border: 3px solid blue;
+	border-radius: 10px;
+	margin-left: auto;
+    margin-right: auto;
+  }
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size:2em;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height:100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+  }
+.flip-card-front {
+	background-color: transparent;
+	color:black;
+  }
+.flip-card-back {
+	background-color: white;
+	color: black;
+	transform: rotateY(180deg);
+  }
+/* .about-image{
+	display:grid;
 	border: 3px solid blue;
     padding: 10px;
     border-radius: 10px;
@@ -133,10 +168,11 @@ nav li{
     width:50%;
     margin-left: auto;
     margin-right: auto;
-} 
+	
+}  */
 
 
-.about>a{
+.about a{
 	display:grid;
 	grid-row:3 /span 1;
 	grid-column:2 /span 2;
@@ -153,7 +189,7 @@ nav li{
     margin-right: auto;
 } 
 
-.project>a{
+.project a{
 	display:grid;
 	grid-column:1 /span 3;
 	grid-row:6 /span 1;
@@ -163,6 +199,7 @@ nav li{
 .overlay{
 	position:absolute;
 	bottom: 0;
+	top:150%;
 	left: 0;
 	right: 0;
 	background-color: #f4f46cf5;
@@ -190,31 +227,165 @@ nav li{
 	grid-row-gap: 15px;
   
   }
-
-/* *:before, *:after {
-    box-sizing: inherit;
-} */
-
+footer{
+	background-color: hsla(188, 81%, 54%, 0.761);
+	color: #0e0d0d;
+	padding-top: 1px;
+	text-align: center;
+  }
 /*Added this so the links stay the same color*/
 a:visited{
 	color:#0c55c2;}
 
-footer{
-	background-color: hsla(188, 81%, 54%, 0.761);
-	color: white;
-	padding-top: 1px;
-	text-align: center;
-  }
-@media screen and (min-width: 600px){
-    .container{
-		grid-template-rows:auto;
-		grid-row-gap: 20px;
+
+/* About me Page css */
+.aboutbody{
+		margin:0;
+		padding: 10px;
+		font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: 18px;
+		background-color:#fff1ec;
+}
+.aboutbody h1 {
+	font-family:fantasy;
+	font-size: 2em; 
+	font-weight: bold;
+	padding: 10px;
+	text-align:left;
+	color:#426de3;
+}
+.aboutmain img{
+		height: 300px;
+		width:auto;
+		border: 1px solid blue;
+		padding: 15px;
+		border-radius: 30px;
+		margin: 10px;
+		align-items: center;
 	}
+.aboutmain p{
+		padding: 10px;
+		color:rgb(0, 0, 0);
+		text-align:left;
+}
+.aboutmain h2{
+	padding: 10px;
+	font-size: 2em; 
+	font-family: fantasy;
+	font-weight: bold;
 }
 
-@media screen and (min-width: 900px){
-	.container{
-		grid-template-rows:auto;
-		grid-row-gap: 25px;
+
+/* personal page */
+.pbody body{
+		margin:0;
+		padding: 10px;
+		font-size: 18px;
+		background:transparent;
+
+}
+.pbody h1{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 2em; 
+	font-weight: bold;
+	color:hsl(314, 58%, 64%);
+	text-align:left;
+}
+.personal p{
+	text-align:left;
+}
+
+/* photo page's css */
+
+.photobody nav{
+	background-color: rgba(57, 252, 255, 0.761);
+	padding: 10px 0;    
+	text-align: right;   
+  }
+.photobody h1{
+	font-family: fantasy;
+	color:rgb(101, 134, 225);
+	font-size: 3em; 
+	font-weight: bold;
+}
+.photomain h2,h3,h4{
+    padding: 10px;
+	font-size: 2em; 
+	font-weight: bold;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	color:#f36767;
+	text-align: left;
+}
+.photomain p{
+	text-align: left;
+	padding: 10px;
+}
+.photomain img{
+	height: 350px;
+    width:auto;
+    border: 3px solid blue;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+}
+@media (prefers-reduced-motion:reduce) {
+	/* CSS to disable motion goes here */
+	.overlay{
+		animation:none;
+	}
+	.flip-card{
+		animation:none;
+	}
+}
+  
+@media screen and (max-width: 600px){
+    .hbody {
+		margin: 0;
+		padding: 10px;
+		font-size: 1em;
+		background-color: transparent;
+		background-size: cover;
+	}
+		.aboutbody{
+		background:transparent;
+	}
+	.aboutmain p{
+		padding: 10px;
+		font-size:1em;
+		color:black;
+		text-align:center;
+}
+	.photomain img{
+		height: 400px;
+		width:auto;
+		border: 1px solid #e98f19;
+		padding: 15px;
+		margin: 10px;
+		border-radius: 30px;
+	}
+	.aboutbody h1,h2{text-align:center;
+	}
+	.pbody h1{
+		text-align: center;}
+	.personal p{
+		text-align:center;
+	}
+} 
+
+@media screen and (max-width: 900px){
+	
+	
+	nav{
+		background-color:transparent;
+		font-size:2em;
+	
+	}
+	.photomain img{
+		height: 500px;
+		width:auto;
+		border: 3px solid pink;
+		padding: 15px;
+		margin: 10px;
+		border-radius: 70px;
 	}
 }
